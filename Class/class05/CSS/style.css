@@ -1,0 +1,17 @@
+.first{
+    color:rgb(50, 121, 168)
+}
+.first{
+    background-color: #36af3c;
+}
+
+.second {
+
+
+
+    /* background-color:darkcyan; */
+    background-color: rgba(3,55,369,1);
+}
+.second p, .second h1{ color: #36af3c;
+
+}

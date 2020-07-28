@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Forms and form controls
+    </title>
+</head>
+
+<body>
+
+    <!-- Simple form -->
+
+    <fieldset>
+        <legend>
+            REgistration form
+        </legend>   
+     
+
+    <form action="" method="POST" >
+        <label for="firstName">Fistname</label>
+        <input type="text" name="fistName" required>
+        <br>
+        <br>
+        <label for="lastName">Lastname</label>
+        <input type="text" name="lastName" required>
+        <br>
+        <br>
+        <label for="username">Username</label>
+        <input type="text" name="username" required>
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+        <br>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female">
+        <br>
+        <br>
+        <p>Hobbies:</p>
+        <label for="hobbies">Reading</label>
+        <input type="checkbox"> <br>
+        <label for="hobbies">Running</label>
+        <input type="checkbox"><br>
+        <!-- za ako e cekirano bez a kliknis samo so ke otvoris na kraj stavi checkes ko gore -->
+        <label for="hobbies">Swimming</label>
+        <input type="checkbox">
+        <br>
+        <br>
+        <label for="city">Please select a city</label>
+        <select name="city">
+            <option value="default">-----Select yur city-----</option>
+            <option value="ohrid" selected>Ohrid</option>
+            <option value="skopje">Skopje</option>
+            <option value="veles">Veles</option>
+            <option value="strumica">Strumica</option>
+        </select>
+        <br>
+        <br>
+        <label for="subjects">Select one or more subjects</label> <br>
+        <select name=subjects multiple="multiple">
+            <option value="calculus">Calculus</option>
+            <option value="Physics">Physics</option>
+            <option value="Science">Science</option>
+            <option value="html-css">HTML/CSS</option>
+        </select>
+        <br>
+        <br>
+        <label for="image">Upload image</label>
+        <br>
+        <br>
+        <input type="file" name="imageFile">
+        <br>
+        <br>
+        <label for="comments">Additional information</label>
+        <br>
+        <textarea name="comments" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Register">
+
+    </form>
+</fieldset>
+    <br>
+    <br>
+    <input type="search">
+    <button>
+        seatch <img src="https://pluspng.com/img-png/free-png-plus-sign-plus-icon-512.png" alt="plussign" width="15px">
+    </button>
+</body>
+
+</html>

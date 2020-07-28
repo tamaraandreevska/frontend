@@ -1,0 +1,33 @@
+/* .main{
+    border: 1px solid black;
+}
+
+.first{
+    color: green;
+    background-color: black;
+}
+.second{
+    color: pink;
+    background-color: yellow;
+}
+.third{
+    color: black;
+    background-color: pink;
+}
+.fourth{
+    color: black;
+    background-color: orange;
+} */
+
+#first {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+#first p{
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+.fourth-paragraph{
+    text-align: right;
+}
