@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none; 
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a:link {
+    text-decoration: none;
+}
+
+#first h2 {
+    display: none;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 20px;
+}
+
+#register input {
+    display: block;
+}

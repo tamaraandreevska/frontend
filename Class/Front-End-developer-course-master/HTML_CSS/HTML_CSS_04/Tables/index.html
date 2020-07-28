@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Tables & Forms in HTML
+    </title>
+</head>
+
+<body>
+    <table border="1">
+        <caption>
+            Simple table implementation
+        </caption>
+        <tr>
+            <td>Row 1 | Column 1</td>
+            <td>Row 1 | Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 | Column 1</td>
+            <td>Row 2 | Column 2</td>
+        </tr>
+    </table>
+
+    <hr>
+    <br>
+    <br>
+    <table border="1">
+        <caption>
+            Complete Table implementation
+        </caption>
+        <thead>
+            <th>Name</th>
+            <th>Time to prepare</th>
+            <th>Servings</th>
+            <th>Link</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chicken in curry sauce</td>
+                <td>60 min</td>
+                <td>4 persons</td>
+                <td>
+                    <a href="#">Link</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Pasta</td>
+                <td>30 min</td>
+                <td>2 persons</td>
+                <td>
+                    <a href="#">Link</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <br>
+    <br>
+    <table border="1">
+        <caption>
+            Table with merging columns using (colspan attribute)
+        </caption>
+        <thead>
+            <th></th>
+            <th>9 AM</th>
+            <th>10 AM</th>
+            <th>11 AM</th>
+            <th>12 AM</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td colspan="2">
+                    Geography
+                </td>
+                <td>
+                    Math
+                </td>
+                <td>
+                    Art
+                </td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>
+                    Sport
+                </td>
+                <td colspan="2">
+                    History
+                </td>
+                <td>
+                    Chemistry
+                </td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="2" rowspan="2">
+                    Calculus
+                </td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <br>
+    <br>
+    <table border="1" cellpadding="20" cellspacing="2">
+        <caption>
+            Table with merging rows by using rowspan attribute
+            and beautify the data representation by using cellpadding and cellspacing
+        </caption>
+        <thead>
+            <th></th>
+            <th>CNN</th>
+            <th>Fox TV</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6pm - 7pm</td>
+                <td rowspan="2">
+                    News
+                </td>
+                <td rowspan="3">
+                    Movie
+                </td>
+            </tr>
+            <tr>
+                <td>7pm - 8pm</td>
+            </tr>
+            <tr>
+                <td>8pm - 9pm</td>
+                <td>Documentary movie</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Test</th>
+            <th>Test</th>
+            <th>Test</th>
+        </tfoot>
+    </table>
+
+    <hr>
+    <br>
+    <br>
+    <table border="1" cellpadding="5">
+        <caption>
+            Table that includes more HTML tags and elements
+        </caption>
+        <caption>My favorite recipes</caption>
+        <thead>
+            <th></th>
+            <th>Name</th>
+            <th>Time to prepare</th>
+            <th>Servings</th>
+            <th>Link</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="https://www.allrecipes.com/recipe/25445/key-west-chicken/?internalSource=popular&referringContentType=Homepage&clickId=cardslot%202" target="_blank">
+                        <img src="./assets/img/wes-chicken.jpg" alt="Key west chicken" width="100px">
+                    </a>
+                </td>
+                <td>Key West Chicken</td>
+                <td>60 min</td>
+                <td>4 persons</td>
+                <td>
+                    <a href="https://www.allrecipes.com/recipe/25445/key-west-chicken/?internalSource=popular&referringContentType=Homepage&clickId=cardslot%202" target="_blank">
+                        Link
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.allrecipes.com/recipe/231664/sweet-teriyaki-beef-skewers/?internalSource=popular&referringContentType=Homepage&clickId=cardslot%204" target="_blank">
+                        <img src="./assets/img/teriyaki-beef.jpg" alt="Tariyaki beef" width="100px">
+                    </a>
+                </td>
+                <td>Sweet Teriyaki Beef Skewers</td>
+                <td>120 min</td>
+                <td>4 persons</td>
+                <td>
+                    <a href="https://www.allrecipes.com/recipe/231664/sweet-teriyaki-beef-skewers/?internalSource=popular&referringContentType=Homepage&clickId=cardslot%204" target="_blank">
+                        Link
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

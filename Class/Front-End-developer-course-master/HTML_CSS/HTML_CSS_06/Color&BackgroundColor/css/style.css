@@ -1,0 +1,21 @@
+.first {
+    color: rgb(3, 132, 252);
+}
+
+.first {
+    background-color: #0acf2a;
+}
+
+.second {
+    /* background-color: darkcyan; */
+
+    /* rgba -> red green blue opacity */
+    background-color: rgba(3, 135, 270, 0.5);
+}
+
+.second p, .second h1 {
+    color: #077018;
+}
+
+
+

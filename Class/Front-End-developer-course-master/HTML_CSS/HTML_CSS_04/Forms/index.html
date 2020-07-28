@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms and fomr controls
+        </title>
+    </head>
+
+    <body>
+        
+        <!-- SIMPLE FORM -->
+
+        <fieldset>
+            <legend>
+                Registration form
+            </legend>
+            <form action="register.php" method="POST">
+                <lable for="firstName">Firstname</lable>
+                <input type="text" name="firstName" placeholder="Enter name..." required/>
+                <br>
+                <br>
+                <label for="lastName">Lastname</label>
+                <input type="text" name="lastName" required>
+                <br>
+                <br>
+                <label for="username">Username</label>
+                <input type="text" name="username" required>
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <br>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+                <br>
+                <br>
+                <label for="phone">Phone number</label>
+                <input type="number" name="phone" required>
+                <br>
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" checked>
+                <br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender">
+                <br>
+                <br>
+                <p>Hobbies:</p>
+                <label for="hobbies">Reading</label>
+                <input type="checkbox" checked> <br>
+    
+                <label for="hobbies">Running</label>
+                <input type="checkbox"> <br>
+    
+                <label for="hobbies">Swimming</label>
+                <input type="checkbox">
+                <br>
+                <br>
+                <label for="city">Please select a city</label>
+                <select name="city">
+                    <option value="default">----Select your city----</option>
+                    <option value="skopje">Skopje</option>
+                    <option value="veles">Veles</option>
+                    <option value="ohrid" selected>Ohrid</option>
+                    <option value="strumica">Strumica</option>
+                </select>
+                <br>
+                <br>
+                <label for="subjects">Select one or more subjects</label><br>
+                <select name="subjects" multiple="multiple">
+                    <option value="calculus_1">Calculus 1</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Scinece">Science</option>
+                    <option value="html_css">HTML/CSS</option>
+                </select>
+                <br>
+                <br>
+                <label for="image">Upload image</label><br><br>
+                <input type="file" name="imageFile">
+                <br>
+                <br>
+                <label for="comments">Additional information</label><br>
+                <textarea name="comment" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <input type="hidden" value="testValue">
+                <input type="submit" value="Register">
+            </form>
+    
+        </fieldset>
+        <br>
+        <br>
+        <input type="search">
+        <button>
+            Search <img src="./img/plus-sign.png" alt="Plus sign" width="10px">
+        </button>
+    </body>
+</html>

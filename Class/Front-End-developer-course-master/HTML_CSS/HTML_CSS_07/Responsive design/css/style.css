@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-attachment: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#logo img {
+    width: 80px;
+}
+
+.color-box img {
+    width: 150px;
+}
+
+#container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo {
+    float: left;
+    line-height: normal;
+}
+
+
+
+#menu {
+    float: right;
+    line-height: 100px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: dodgerblue;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+#menu a:hover {
+    color: #2d6092;
+}
+
+#hamburger {
+    display: none;
+}
+#header{
+    background-color: #7c767a;
+    text-align: center;
+    padding: 160px 0;
+    color: #eee;
+
+}
+.header-containter h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.header-containter h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header-containter button{
+    border: none;
+    background-color: #445f5c;
+    font-size: 24px;
+    padding: 15px 50px;
+    border-radius: 50px;
+
+
+}
+.card{
+    background-color: white;
+    text-align: center;
+    padding: 60px 30 px;
+    margin: 0 20px;
+    ;}
+
+.card img{
+width: 100px
+;}
+.tech{
+    float: left;
+    width: 28%;
+}
+.prod{
+    float: left;
+    width: 28%;
+}
+.clients{
+    float: left;
+    width: 28%;
+}
+.work{
+    position: relative;
+    bottom: 100px;
+}
+
+
+/*Responsive-deisgn*/
+@media screen and (max-width:780px){}
+    .tech{
+    float: none;
+    width: 70%;
+}
+    .prod{
+        float: none;
+        width: 70%;
+}
+.clients{
+    float: none;
+    width: 70%;
+}
+.card{
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 620px){
+    #menu{
+        display: nones;
+    }
+
+    #hamburger{
+        display: inline;
+        float: right;
+        color: black;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    .header-containter h1{
+        font-size: 35px;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .header-containter button{
+        border: none;
+        background-color: blue;
+        font-size: 12px;
+        padding: 15px 50px;
+        border-radius: 50px;
+    }
+
+}
+
+@media screen and (min-width: width 320px;){
+    
+}
+
+@media screen and(min-width:480 px) (max-width:900px;) {
+    .header-containter button{
+        border: none;
+        background-color: yellow;
+        font-size: 12px;
+        padding: 15px 50px;
+        border-radius: 50px;
+    }
+
+}
+    
+}

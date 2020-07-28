@@ -1,0 +1,168 @@
+/* 
+try to specify default font-size to the body, so that you can use the scalable units like ems and rems
+to specify the font-size property to separate elements that contains a text */
+body {
+    font-size: 16px;
+}
+
+/* font-weight | font-style - specify the boldness or oblique of the text */
+#first {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* font-weight: bold; */
+    /* font-weight: 850; number between 100 and 900 */
+}
+
+/* text-transform - make all the text appears 
+    in uppercase or lowercase letters 
+    or make every firstletter of each word capital */
+#first p {
+    font-style: italic;
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+
+    line-height: 2.0em;
+}
+
+/* text-decoration - underline, cross or overline the text in an element */
+.second-paragraph {
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    text-decoration: line-through;
+}
+
+/* letter-spacing | word-spacing - specify the space between lines and words in some element like paragraph */
+.third-paragraph {
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+}
+
+/* text-align - position the text inside the element left, right, center or justify from both sides */
+.fourth-paragraph {
+    text-align: center;
+}
+
+/* vertical-align - used but not so often, position the text up/down regarding the parent element */
+#vertical-align {
+    vertical-align: text-bottom;
+}
+
+/* text-shadow - specifying the shadow of the text */
+.fifth-paragraph {
+    /* text-shadow - left/right | up/down | blur | color*/
+    text-shadow: -1px -1px 2px greenyellow;
+}
+
+/* :first-letter - styling the first letter of the first line from the element */
+.sixth-paragraph:first-letter {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* :first-line - styling the first line of the element */
+.sixth-paragraph:first-line {
+    color: green;
+    text-align: right;
+}
+
+
+/* LINKS */
+
+/* a:link - the default representation of the link when the page is loaded */
+ul>li a:link{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+}
+
+/* a:visited - the bhaviour of the link, after its been clicked*/
+ul>li a:visited {
+    color: yellow;
+}
+
+/* a:hover - the behavior of the link while positioning the mouse over the link and not doing anythings */
+ul>li a:hover {
+    color: green;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+    background-color: rgba(100, 120, 200, 0.35);
+}
+
+/* a:fokus - the moment the link got focus (it is clicked or just focused by press tab from the keyboard) */
+ul>li a:focus {
+    font-size: 30px;
+}
+
+/* a:active - the behavior of the link at the moment of clicking the link */
+ul>li a:active {
+    color: purple;
+    font-style: italic;
+}
+
+
+/* ------------------------------- BOX MODEL ------------------------*/
+
+#first-box {
+    background-color: red;
+    width: 30%;
+    height: 500px;
+
+    /* Overflow property, tell the text how to behave when the fiv is smaller than its width or height */
+    overflow: auto;
+
+}
+
+#second-box {
+    background-color: yellow;
+    width: 950px;
+    height: 200px;
+    
+    /* specify border-width each side separate */
+    /* border-width: thick; */
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width:1px;
+
+    /* specify border-width in one line (top, right, bottom, left) */
+    /* border-width: 1px 1px 1px 5px; */
+
+    /* specify border width, style and color in one line */
+    border: 5px solid black;
+}
+
+#third-box {
+    background-color: green;
+
+    min-width: 500px;
+    max-width: 780px;
+
+    min-height: 50px;
+    max-height: 90px;
+}
+
+#second-box {
+    /* specify margins each side separately */
+
+    /* margin-top: 100px; */
+    /* margin-right: 200px; */
+    /* margin-bottom: 150px; */
+    /* margin-left: 100px; */
+
+    /* specify margin in one line */
+    margin: 100px 0px 200px 100px;
+}
+
+#second-box p {
+    /* specify padding each side separately */
+
+    /* padding-top: 100px; */
+    /* padding-right: 200px; */
+    /* padding-bottom: 150px; */
+    /* padding-left: 100px; */
+
+    /* specify padding in one line */
+    padding: 2px 0px 0px 5px;
+}
